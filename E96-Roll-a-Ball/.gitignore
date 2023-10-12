@@ -1,7 +1,10 @@
 # This .gitignore file should be placed at the root of your Unity project directory
-#
-# Get latest from https://github.com/github/gitignore/blob/main/Unity.gitignore
-#
+
+# =============================================================
+# Unity platform excluseds taken from:
+# https://github.com/github/gitignore/blob/main/Unity.gitignore
+# =============================================================
+
 /[Ll]ibrary/
 /[Tt]emp/
 /[Oo]bj/
@@ -70,6 +73,50 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+
+# ===========================================================================
+# Rider platform excludes taken from:
+# https://github.com/JetBrains/resharper-rider-samples/blob/master/.gitignore
+# ===========================================================================
+
+# User specific
+**/.idea/**/workspace.xml
+**/.idea/**/tasks.xml
+**/.idea/shelf/*
+**/.idea/dictionaries
+**/.idea/httpRequests/
+
+# Sensitive or high-churn files
+**/.idea/**/dataSources/
+**/.idea/**/dataSources.ids
+**/.idea/**/dataSources.xml
+**/.idea/**/dataSources.local.xml
+**/.idea/**/sqlDataSources.xml
+**/.idea/**/dynamic.xml
+
+# Rider
+# Rider auto-generates .iml files, and contentModel.xml
+**/.idea/**/*.iml
+**/.idea/**/contentModel.xml
+**/.idea/**/modules.xml
+
+# ===========================================================================
+# VS Code platform excludes taken from:
+# https://github.com/github/gitignore/blob/main/Global/VisualStudioCode.gitignore
+# ===========================================================================
+
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
+
+# Local History for Visual Studio Code
+.history/
+
+# Built Visual Studio Code Extensions
+*.vsix
 
 # macOS
 .DS_Store
