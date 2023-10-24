@@ -1,9 +1,9 @@
-using System.Collections;
-using System.Collections.Generic;
+using System;
 using UnityEngine;
 
 public class Rotator : MonoBehaviour
 {
+    [NonSerialized] public Spawner parent;
     private Vector3 origin;
     private void Start()
     {
@@ -20,5 +20,10 @@ public class Rotator : MonoBehaviour
         var pos = cachedTransform.position;
         var newY = Mathf.Sin(Time.time * 2.0f) * 0.25f + origin.y;
         cachedTransform.position = new Vector3(pos.x, newY, pos.z);
+    }
+
+    private void OnDestroy()
+    {
+        parent.DestroyChild();
     }
 }
